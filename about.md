@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-##About Me
+### About Me
 
 The Boring About Me: I'm a computer science student at the University of Toronto. 
 I'm familiar with Python, JavaScript, HTML, CSS and I'm in teh process of learning node.js and flask. 
