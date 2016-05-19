@@ -1,3 +1,8 @@
+---
+layout: default
+title: About Me
+permalink: /about/
+---
 ##About Me
 
 The Boring About Me: I'm a computer science student at the University of Toronto. 
