@@ -14,6 +14,8 @@ I'd like to work towards creating interesting things.
 I'm a self proclaimed ravenclaw who likes reading science fictiion and writing poetry when I'm not busy
 coding. Other people call me intelligent, hardworking, and responsible, which is also true. 
 
+### Contact me
 
+[veerpal707@gmail.com](veerpal707@gmail.com)
 
 
