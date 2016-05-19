@@ -41,3 +41,17 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+ .blurb {
+     position: fixed;
+     width: 300px;
+     height: auto;
+     background: #000;
+ }
+ .container {
+     margin-left: 20px;
+     position: relative;
+     background: #f00;
+     overflow: auto;
+     z-index: 1;
+ }
