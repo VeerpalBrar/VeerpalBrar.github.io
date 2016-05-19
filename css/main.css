@@ -1,6 +1,6 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 90%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -46,12 +46,12 @@ ul.posts li {
      position: fixed;
      width: 300px;
      height: auto;
-     background: #000;
+     background:#E7E6E6;
  }
  .container {
      margin-left: 20px;
      position: relative;
-     background: #f00;
+     width:auto;
      overflow: auto;
      z-index: 1;
  }
