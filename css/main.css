@@ -24,7 +24,7 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
     color: #333;
 }
@@ -46,13 +46,14 @@ ul.posts li {
     position:fixed;
     top:0px;
     bottom:0px;
-    left:100px;
-    width:30%; 
+    left:50px;
+    width:300px; 
     background:#E7E6E6;
+    padding: 10px;
  }
  .container {
-    margin-left:50%;
-    width:60%;
+    margin-left:300px;
+    right:50px;
     
  }
  
