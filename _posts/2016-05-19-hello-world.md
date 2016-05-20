@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World
-date: {}
+date: {19 May 2016}
 published: true
 ---
 For my first post, I figured I'd start with "hello world" in true coding fashion. 
