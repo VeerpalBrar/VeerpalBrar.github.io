@@ -2,20 +2,20 @@
 layout: page
 title: About Me
 permalink: /about/
+published: true
 ---
 
-**The Boring About Me**: I'm a computer science student at the University of Toronto. 
+##The Boring Version: 
+I'm a computer science student at the University of Toronto. 
 I'm familiar with Python, JavaScript, HTML, CSS and I'm in the process of learning node.js and flask. 
 
-**The Interesting About Me**: I'm a curious coder interested in more things then I have time to learn.
-I like learning about cryptography, machine learning, web development and more! No matter what I'm learning, 
-I'd like to work towards creating interesting things. 
+##The Interesting Version: 
+I'm a self proclaimed Ravenclaw who started programming on a whim and never stopped. I love the logic and creativity behind programming and spend my time scanning the internet for random tibits of information about cryptography, machine learning, web development and more! I try to take what I learn and use it to build things with code. 
 
-I'm a self proclaimed ravenclaw who likes reading science fictiion and writing poetry when I'm not busy
+You'll find me reading science fictiion, watching too much television, or writing poetry when I'm not busy
 coding.  
+
 
 ### Contact me at:
 
-[v.brar@mail.utoronto.ca](v.brar@mail.utoronto.ca)
-
-
+[veerpal.brar {at} mail.utoronto {dot} ca]([v.brar@mail.utoronto.ca)
