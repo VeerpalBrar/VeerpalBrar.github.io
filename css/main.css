@@ -49,6 +49,8 @@ ul.posts li {
     width:300px; 
     padding: 1em;
     background:#E7E6E6;
+  	border-radius: 15px 50px;
+    border: 2px solid black;
  }
  .container {
     margin-left:300px;
