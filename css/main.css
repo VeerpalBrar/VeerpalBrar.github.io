@@ -54,3 +54,7 @@ ul.posts li {
     margin-left:320px;
     
  }
+ol, ul {
+     margin-top: auto; 
+     margin-bottom: auto; 
+}
