@@ -61,16 +61,16 @@ ol, ul {
 
 @media (min-width: 768px) {
     .container-small {
-        width: 300px;
+        width: 500px;
     }
 }
 @media (min-width: 992px) {
     .container-small {
-        width: 500px;
+        width: 800px;
     }
 }
 @media (min-width: 1200px) {
     .container-small {
-        width: 700px;
+        width: 1000px;
     }
 }
