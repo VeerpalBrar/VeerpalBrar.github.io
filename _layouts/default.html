@@ -1,36 +1,54 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<!-- Latest compiled and minified CSS -->
-			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-			
-			<!-- jQuery library -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-			
-			<!-- Latest compiled JavaScript -->
-			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		</head>
-		<body> 
-		<div class="container">
-		    <div class="row">
-		    	<nav class="col-sm-3">
-		    	<p></p>	Veerpal Brar</p>
-			      <ul class="nav nav-pills nav-stacked" data-spy="affix">
-			       <li><a href="/">Home</a></li>
-			        	<li class="active"><a href="/about">About</a></li>
-		        		<li><a href="/resume">Resume</a></li>
-		        		<li><a href="/blog">Blog</a></li>
-					<li><a href="https://github.com/VeerpalBrar">github</a></li>
-			      </ul>
-			</nav>	
-			<!--/.blurb -->
-			<div class="col-sm-9">
-				{{ content }}
-			</div><!-- /.content -->
-		    </div>	
-		</div>
-		</body>
-	</html>
+<html>
+<head>
+    <title>{{ page.title }}</title><!-- Latest compiled and minified CSS -->
+    <link href=
+    "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel=
+    "stylesheet"><!-- jQuery library -->
+
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+    </script><!-- Latest compiled JavaScript -->
+
+    <script src=
+    "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script><!-- link to main stylesheet -->
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" class=
+                "navbar-toggle collapsed" data-target="#navbar" data-toggle=
+                "collapse" type="button"><span class="sr-only">Toggle
+                navigation</span> <span class="icon-bar"></span> <span class=
+                "icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="#">Veerpal Brar</a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/resume">Resume</a>
+                    </li>
+                    <li>
+                        <a href="/blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/VeerpalBrar">github</a>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container">
+        {{ content }}
+    </div><!-- /.content -->
+</body>
+</html>
