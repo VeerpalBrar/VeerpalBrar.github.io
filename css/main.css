@@ -55,6 +55,9 @@ ul.posts li {
     margin-left:320px;
     
  }
+ .container-fluid{
+    max-width:760px;
+ }
 ol, ul {
      margin-top: 15px; 
      margin-bottom: 10px; 
