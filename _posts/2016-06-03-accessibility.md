@@ -4,7 +4,6 @@ title: Accessibility
 date: {03 June 2016}
 published: true
 ---
-## Accessibility
 
 This past month I have been working as a web development assistant with the Minisitry of Transporation. A lot of my work as been about web accessibility.
 
