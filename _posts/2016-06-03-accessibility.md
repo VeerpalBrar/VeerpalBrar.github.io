@@ -1,4 +1,7 @@
 ---
+layout: post
+title: Accessibility
+date: {03 June 2016}
 published: false
 ---
 ## Accessibility
