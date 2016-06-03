@@ -48,7 +48,10 @@ ul.posts li {
 h1 {
    color:#0d81af; 
 }
-
+.jumbotron {
+    background-color:#6cd0d4;
+    margin-top:15px;
+}
 .blurb {
     padding: 0.5em;
   	border-radius: 15px 50px;
