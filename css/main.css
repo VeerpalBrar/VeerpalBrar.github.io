@@ -2,9 +2,20 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background-color:lightgrey;
+    background-image:url('/blue-heart.jpg');
+}
+nav {
+    background:aliceblue;
+    text-align:center;
+    border-radius:10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Open Sans','Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -15,17 +26,17 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #104F63;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Open Sans','Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Open Sans','Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
     color: #333;
     font-size:1em;
@@ -62,13 +73,16 @@ h1 {
     margin-left:320px;
     
  }
- .container-fluid {
-    border-radius: 15px 15px;
-    border: 1px dashed black;
- }
+
 ol, ul {
      margin-top: 15px; 
      margin-bottom: 10px; 
+}
+
+.container-fluid {
+    border-radius: 15px 15px;
+    padding: 10px;
+    background-color: white;
 }
 
 @media (min-width: 768px) {
