@@ -63,8 +63,6 @@ h1 {
     
  }
  .container-fluid {
-    max-width:760px;
-    background: aliceblue;
     border-radius: 15px 15px;
     border: 1px dashed black;
  }
