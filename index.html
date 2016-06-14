@@ -1,12 +1,38 @@
 ---
 layout: default
 title: Veerpal Brar
+published: true
 ---
 <div class="posts">
+  <h2> Personal Projects</h2>
+  <h3><a href="/CodeNotes">CodeNotes</h3>
+        <h3> SafetyTab </h3>
+    <p> SafetyTab is a Google Chrome extension that allows users to quickly access a new tab loaded with a website from a predetermined list. This is perfect for when you need to pretend to do homework as you parents look over your shoulder!</p>
+    <p> Languages: Javascipt, HTML, CSS  + Chrome's Javascript API's </p>
+    <h3>CodeNotes </h3>
+    <p>CodeNotes is a dual purpose editor for computer science students. It allows for rich text editing 		as well as text-editing for code.</p>
+    <p> Languages: JavaScript, CSS, HTML </p>
+    <h2> School Projects </h2>
+    <h3> Puzzle Solver </h3>
+    <p> This a program that is able to solve Peg Solitaire Puzzles, MN Puzzles, Word Ladder Puzzles and Sudoku puzzles using either Breadth-first search or Depth-first search.</p>
+    <p> Written in python it uses classes, objects, recursion, and queues. </p>
+    <p> Final Grade: 92 % </p>
+    <p><em> Code available upon request.</em></p>
+    
+    <h3>Text Adventure Game</h3>
+    <p> This is a small text adventure game where the user walks around the University of Toronto mississauga campus, trying to collect items before the big exam! </p>
+    <p> Final Grade: 90% </p>
+    <p><em> Code available upon request.</em></p>
+    <h2> Open Source Contributions </h2>   
+    <h3> Learn x in Y Minutes </h3>
+    <p> Learn x in Y Minutes is a quick way to get caught up in the syntax of any programming language. I updated the Python 3 page to include information on the high common range function. </p>
+    <p> This project was my first time really using git, and learning about forks, branches, commits, and pull requests. </p>
+    <p> Language: Markdown </p>
+  <h2>Blog Post</h2>
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 
       <div class="entry">
         {{ post.excerpt }}
