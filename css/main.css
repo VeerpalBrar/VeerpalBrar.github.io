@@ -86,17 +86,8 @@ ol, ul {
 }
 
 @media (min-width: 768px) {
-    .container-small {
-        width: 500px;
+    body {
+        width: 100%;
     }
 }
-@media (min-width: 992px) {
-    .container-small {
-        width: 800px;
-    }
-}
-@media (min-width: 1200px) {
-    .container-small {
-        width: 1000px;
-    }
-}
+
