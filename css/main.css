@@ -85,9 +85,8 @@ ol, ul {
     background-color: white;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     body {
-        width: 100%;
+        width: 90%;
     }
 }
-
