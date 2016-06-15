@@ -85,18 +85,8 @@ ol, ul {
     background-color: white;
 }
 
-@media (min-width: 768px) {
-    .container-small {
-        width: 500px;
-    }
-}
-@media (min-width: 992px) {
-    .container-small {
-        width: 800px;
-    }
-}
-@media (min-width: 1200px) {
-    .container-small {
-        width: 1000px;
+@media (max-width: 768px) {
+    body {
+        width: 90%;
     }
 }
