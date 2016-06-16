@@ -4,7 +4,6 @@ title: Google Extensions - Using Variables as Object Keys
 date: 16 June 2016
 published: true
 ---
-### Using variables as Object keys
 
 Recently, I just finished creating my first google chrome extension, called SafetyTab. Now, google chrome extensions are relatively simple to create, as long as you know some HTML, CSS, and JavaScript (including asynchronous JavaScript). 
  
@@ -24,14 +23,12 @@ The output would be Object {key: "value"} as expected.
 
 This works great and if one  quite useful. However, the following does not have expected results. 
 ``` javascript
-foo() {
-    var key = $("#key").val(); // assume that key refers to the string "item"
-    chrome.storage.sync.set({key:"value"}, function(){
-       chrome.storage.sync.get(null, function(result) {
+var key = $("#key").val(); // assume that key refers to the string "item"
+chrome.storage.sync.set({key:"value"}, function(){
+	chrome.storage.sync.get(null, function(result) {
     		console.log(result);
-		});
-    });
-}
+	});
+});
 ```
 The console output is: Object {key: "value"}. 
 
