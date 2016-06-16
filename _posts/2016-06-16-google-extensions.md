@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google Extensions : Using Variables as Object Keys
+title: Google Extensions - Using Variables as Object Keys
 date: 16 June 2016
 published: true
 ---
