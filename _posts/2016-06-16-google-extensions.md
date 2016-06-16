@@ -24,7 +24,7 @@ The output would be Object {key: "value"} as expected.
 
 This works great and if one  quite useful. However, the following does not have expected results. 
 ``` javascript
-function foot() {
+foo() {
     var key = $("#key").val(); // assume that key refers to the string "item"
     chrome.storage.sync.set({key:"value"}, function(){
        chrome.storage.sync.get(null, function(result) {
@@ -57,4 +57,4 @@ Then the output will be Object {item: "value"} as desired.
 
 Admittedly, it is not a concise as one would like it to be, but it's easy to understand and it gets the job done!
 
-Also, if you interested, you can learn about the [google storage API](https://developer.chrome.com/extensions/storage) or follow their [Building a Chrome Extension Tutorial](https://developer.chrome.com/extensions/getstarted).  
+Also, if you interested, you can learn about the [google storage API](https://developer.chrome.com/extensions/storage) or follow their [Building a Chrome Extension Tutorial](https://developer.chrome.com/extensions/getstarted).
