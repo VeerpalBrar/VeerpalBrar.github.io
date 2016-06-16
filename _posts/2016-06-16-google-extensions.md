@@ -21,7 +21,8 @@ chrome.storage.sync.set({"key":"value"}, function(){
 ```
 The output would be Object {key: "value"} as expected. 
 
-This works great and if one  quite useful. However, the following does not have expected results. 
+This works great and if one  quite useful. However, the following does not have expected results.
+
 ``` javascript
 var key = $("#key").val(); // assume that key refers to the string "item"
 chrome.storage.sync.set({key:"value"}, function(){
