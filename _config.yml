@@ -1,4 +1,3 @@
 name: Veerpal Brar
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
