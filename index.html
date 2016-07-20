@@ -23,15 +23,15 @@ published: true
     <p> Final Grade: 90% </p>
     <p><em> Code available upon request.</em></p>
     <h2> Open Source Contributions </h2>
-    <h3> Learn x in Y Minutes </h3>
-    <p> Learn x in Y Minutes is a quick way to get caught up in the syntax of any programming language. I updated the Python 3 page to include information on the high common range function. </p>
+    <h3> Learn X in Y Minutes </h3>
+    <p> Learn X in Y Minutes is a quick way to get caught up in the syntax of any programming language. I updated the Python 3 page to include information on the high common range function. </p>
     <p> This project was my first time really using git, and learning about forks, branches, commits, and pull requests. </p>
     <p> Language: Markdown </p>
     <h3> Duck Duck Go Instant Answers </h3>
     <p> Create a geometry formulea cheat cheet that appears as an instant answer on the Duck Duck Go search answer when one searches 'geometry formula cheat sheet'.
     <p> Language: The cheat sheet appears as a .json file. <p>  
-  <h2>Blog Posts</h2>
-  {% for post in site.posts %}
+  <h2>Recent Blog Posts</h2>
+  {% for post in site.posts limit:3%}
     <article class="post">
 
       <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>

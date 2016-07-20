@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Extensions - Using Variables as Object Keys</title><!-- Latest compiled and minified CSS -->
+     <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Recently, I just finished creating my first google chrome extension, called SafetyTab. Now, google chrome extensions are relatively simple to create, as long as you know some HTML, CSS, and JavaScript (including asynchronous JavaScript).
+
+The documentation provided by google is simple, straightforward and they have a lot of samples to look at. Not to mention, there is a wealth of tutorials available online. I highly encourage anyone looking for a quick coding project to try and create a google chrome extension.
+
+" />
+    <meta property="og:description" content="Recently, I just finished creating my first google chrome extension, called SafetyTab. Now, google chrome extensions are relatively simple to create, as long as you know some HTML, CSS, and JavaScript (including asynchronous JavaScript).
+
+The documentation provided by google is simple, straightforward and they have a lot of samples to look at. Not to mention, there is a wealth of tutorials available online. I highly encourage anyone looking for a quick coding project to try and create a google chrome extension.
+
+" />
+    
+    <meta name="author" content="Veerpal Brar" />
+
+    
+    <meta property="og:title" content="Google Extensions - Using Variables as Object Keys" />
+    <meta property="twitter:title" content="Google Extensions - Using Variables as Object Keys" />
+    
+
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel=
+    "stylesheet"><!-- jQuery library -->
+
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+    </script><!-- Latest compiled JavaScript -->
+
+    <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script><!-- link to main stylesheet -->
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body data-gr-c-s-loaded="true">
+  <img src="/images/header.jpg" style="width:100%;">
+    <nav style="background:aliceblue; text-align:center; border-radius:10px;">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li class="active">
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="/resume">Resume</a>
+            </li>
+            <li>
+                <a href="/blog">Blog</a>
+            </li>
+            <li>
+                <a href="https://github.com/VeerpalBrar">Github</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <h1>Google Extensions - Using Variables as Object Keys</h1>
+<p class="meta">16 Jun 2016</p>
+
+<div class="post">
+  <p>Recently, I just finished creating my first google chrome extension, called SafetyTab. Now, google chrome extensions are relatively simple to create, as long as you know some HTML, CSS, and JavaScript (including asynchronous JavaScript).</p>
+
+<p>The documentation provided by google is simple, straightforward and they have a lot of samples to look at. Not to mention, there is a wealth of tutorials available online. I highly encourage anyone looking for a quick coding project to try and create a google chrome extension.</p>
+
+<p>However, there was one aspect that I struggled with, for which I did not find as much documentation. When using the google storage API, one can set key/value pairs like so:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">chrome</span><span class="p">.</span><span class="nx">storage</span><span class="p">.</span><span class="nx">sync</span><span class="p">.</span><span class="nx">set</span><span class="p">({</span><span class="s2">"key"</span><span class="p">:</span><span class="s2">"value"</span><span class="p">},</span> <span class="kd">function</span><span class="p">(){</span>
+   <span class="err">\\</span><span class="nx">using</span> <span class="kc">null</span> <span class="nx">retrieves</span> <span class="nx">all</span> <span class="nx">stored</span> <span class="nx">values</span>
+   <span class="nx">chrome</span><span class="p">.</span><span class="nx">storage</span><span class="p">.</span><span class="nx">sync</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+    	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+	<span class="p">});</span>
+<span class="p">});</span>
+</code></pre>
+</div>
+<p>The output would be Object {key: “value”} as expected.</p>
+
+<p>This works great and if one  quite useful. However, the following does not have expected results.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">key</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"#key"</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span> <span class="c1">// assume that key refers to the string "item"</span>
+<span class="nx">chrome</span><span class="p">.</span><span class="nx">storage</span><span class="p">.</span><span class="nx">sync</span><span class="p">.</span><span class="nx">set</span><span class="p">({</span><span class="na">key</span><span class="p">:</span><span class="s2">"value"</span><span class="p">},</span> <span class="kd">function</span><span class="p">(){</span>
+	<span class="nx">chrome</span><span class="p">.</span><span class="nx">storage</span><span class="p">.</span><span class="nx">sync</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+    		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+	<span class="p">});</span>
+<span class="p">});</span>
+</code></pre>
+</div>
+<p>The console output is: Object {key: “value”}.</p>
+
+<p>This is unexpected since the key was meant to be “item” not key. Essentially, google sets the key to be the variable name, not the value which the variable holds. This can be frustrating if one does not know what the key will be - thus requiring the use of a variable.</p>
+
+<p>However, after much debugging and googling, I learned that this was common behaviour in JavaScript. (No wonder so many people seem to dislike the language!).</p>
+
+<p>To get around this, you can set a variable value as a key by doing this:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">key</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"#key"</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span> 
+<span class="kd">var</span> <span class="nx">save</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">save</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="nx">chrome</span><span class="p">.</span><span class="nx">storage</span><span class="p">.</span><span class="nx">sync</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">save</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+	<span class="nx">chrome</span><span class="p">.</span><span class="nx">storage</span><span class="p">.</span><span class="nx">sync</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+    	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+	<span class="p">});</span>
+<span class="p">});</span>
+</code></pre>
+</div>
+
+<p>Then the output will be Object {item: “value”} as desired.</p>
+
+<p>Admittedly, it is not a concise as one would like it to be, but it’s easy to understand and it gets the job done!</p>
+
+<p>Also, if you interested, you can learn about the <a href="https://developer.chrome.com/extensions/storage">google storage API</a> or follow their <a href="https://developer.chrome.com/extensions/getstarted">Building a Chrome Extension Tutorial</a>.</p>
+
+</div>
+
+    </div><!-- /.content -->
+</body>
+</html>
