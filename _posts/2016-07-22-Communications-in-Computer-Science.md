@@ -1,5 +1,6 @@
 ---
 published: true
+title: Communication in Computer Science
 layout: post
 date: 22 July 2016
 ---
