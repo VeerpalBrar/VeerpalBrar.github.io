@@ -9,7 +9,7 @@ The csv library has a lot of methods that make reading from and writing to csv f
 
 The first thing I noticed was that the csv library offers two ways of reading from a csv file: a csv.reader and csv.DictReader. Both read the file row by row and return the data from each row. What vary's is how they return the data. the csv.reader method returns a list containing all the comlumsn, and the csv.DictReader returns a dictionary where the column headings are the keys, and the values are the data values.
 
-I decided to test out both to see which was best for my needs. I came across this article telling me to use dictreader, but I wanted to know why it would be better.  
+I decided to test out both to see which was best for my needs. I came across this ADD LINKS article telling me to use dictreader, but I wanted to know why it would be better.  
 
 To figure out which was more efficient, I ran some quick tests, checking the time it took for each method to read the file. Since runtime is not the most accurate measurement of efficiency, I repeated this test 1000 times.
 
