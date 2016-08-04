@@ -1,5 +1,8 @@
 ---
-published: false
+layout: post
+title: Reading CSV files with Python
+date: 05 August 2016
+published: true
 ---
 I recently needed to parse a CSV file and decided it would be a good idea to automate the process. Since I didn't need to do heavy  data analysis , I decided to use pythons native csv library rather then panda's or numpy.  
 
@@ -79,4 +82,4 @@ As you can see, with DictReader you have to use key's rather then indexes. This 
 
 In the end, both csv.reader and csv.DictReader have their advantages and disadvantages. It just comes down to whether you want efficiency or readibilty.
 
-(Alternativly, you could do as [Benjamin Bengfort says in his article](https://districtdatalabs.silvrback.com/simple-csv-data-wrangling-with-python) and used namedtuples, which are faster than DictReader but still maintain readability.) 
+(Alternativly, you could do as [Benjamin Bengfort says in his article](https://districtdatalabs.silvrback.com/simple-csv-data-wrangling-with-python) and used namedtuples, which are faster than DictReader but still maintain readability.)
