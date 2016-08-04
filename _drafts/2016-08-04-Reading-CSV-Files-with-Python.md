@@ -13,9 +13,63 @@ I decided to test out both to see which was best for my needs. I came across thi
 
 To figure out which was more efficient, I ran some quick tests, checking the time it took for each method to read the file. Since runtime is not the most accurate measurement of efficiency, I repeated this test 1000 times.
 
-~~~
-Insert code here
-~~~
+'''python
+
+countnt=0
+countobj=0
+
+tie = 0
+
+for i in range(100):
+    start   = time.time()
+    with open(r'C:\Users\BrarVe\Documents\Content Owners\Internet-Content-Owners.csv') as file:
+        read = csv.reader(file, delimiter = ',', quotechar = '"')
+        write_file = open('owner_sort.csv', 'wb')
+        writer = csv.writer(write_file, dialect="excel")
+        
+        owners={}
+        for row in read:
+            page = Page2(row)
+            if page.contentOwner in owners:
+                owners[page.contentOwner].append(page)
+            else:
+                owners[page.contentOwner]=[page]
+    
+    finish = time.time()
+    nt= finish - start
+
+    start   = time.time()   
+    with open(r'C:\Users\BrarVe\Documents\Content Owners\Internet-Content-Owners.csv') as file:
+        read = csv.DictReader(file, delimiter = ',', quotechar = '"')
+        write_file = open('owner_sort.csv', 'wb')
+        writer = csv.writer(write_file, dialect="excel")
+        
+        owners={}
+        for row in read:
+            page = Page(row)
+            if page.contentOwner in owners:
+                owners[page.contentOwner].append(page)
+            else:
+                owners[page.contentOwner]=[page]
+    finish = time.time()
+    obj = finish - start
+    print "dict", obj
+    print   
+    print obj-nt
+    print 
+    if nt > obj:
+        countobj+=1
+    elif nt <obj:
+        countnt+=1
+    else:
+        tie+=1
+
+
+print 'final'   
+print countnt
+print countobj
+print tie
+'''
 
 My final results were that csv.reader was faster 995 times, while DictReader was only faster 5 times. I repeated this test a couple more times, and found that these numbers did not vary much. 
 
