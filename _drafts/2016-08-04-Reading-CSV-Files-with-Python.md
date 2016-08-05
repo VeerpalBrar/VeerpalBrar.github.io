@@ -13,7 +13,7 @@ I decided to test out both to see which was best for my needs. I came across thi
 
 To figure out which was more efficient, I ran some quick tests, checking the time it took for each method to read the file. Since runtime is not the most accurate measurement of efficiency, I repeated this test 1000 times.
 
-```python
+```
 
 count_reader = 0
 count_dict = 0
