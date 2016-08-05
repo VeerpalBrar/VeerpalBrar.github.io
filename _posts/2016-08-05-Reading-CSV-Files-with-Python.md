@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reading CSV files with Python
-date: 08 August 2016
+date: 05 August 2016
 published: true
 ---
 I recently needed to parse a CSV file and decided it would be a good idea to automate the process. Since I didn't need to do heavy  data analysis , I decided to use pythons native csv library rather then panda's or numpy.  
