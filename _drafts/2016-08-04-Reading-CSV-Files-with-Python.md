@@ -60,17 +60,21 @@ In terms of speed, the reader method is a clear winner. Though to be fair, for m
 If you were planning on reading  large CSV files,  those few extra thousandths of a second could make a big difference for efficiency. On the other hand, if the CSV file is not large its probably better to use DictReader as it provides better readability.
 
 Say, for example, you want to print the first column of every row, which holds the data ID. Then you have to do the following with csv.reader:
+
 ```
 read = csv.reader(file, delimiter = ',', quotechar = '"')
 for row in read:
     print row[0]
 ```
+
 Compare this to csv.DictReader:
+
 ```
 read = csv.DictReader(file, delimiter = ',', quotechar = '"')
 for row in read:
     print row['ID']
 ```
+
 As you can see, with DictReader you have to use key's rather then indexes. This makes the code more readable as it is clear what data you are accessing. Furthermore, if the order of the columns changed than the DictReader code would still function without any modification. The csv.reader code would have to be changed though, as the row indexes would now be incorrect.
 
 In the end, both csv.reader and csv.DictReader have their advantages and disadvantages. It just comes down to whether you want efficiency or readibilty.
