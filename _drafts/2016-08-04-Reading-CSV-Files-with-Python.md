@@ -13,30 +13,22 @@ I decided to test out both to see which was best for my needs. I came across thi
 
 To figure out which was more efficient, I ran some quick tests, checking the time it took for each method to read the file. Since runtime is not the most accurate measurement of efficiency, I repeated this test 1000 times.
 
-'''python
+''' python
 
-countnt=0
-countobj=0
-
+count_reader = 0
+count_dict = 0
 tie = 0
-
-for i in range(100):
+for i in range(1000):
     start   = time.time()
     with open(r'C:\Users\BrarVe\Documents\Content Owners\Internet-Content-Owners.csv') as file:
         read = csv.reader(file, delimiter = ',', quotechar = '"')
         write_file = open('owner_sort.csv', 'wb')
-        writer = csv.writer(write_file, dialect="excel")
+        writer = csv.writer(write_file, dialect="excel")  
         
-        owners={}
         for row in read:
-            page = Page2(row)
-            if page.contentOwner in owners:
-                owners[page.contentOwner].append(page)
-            else:
-                owners[page.contentOwner]=[page]
-    
+            print row  
     finish = time.time()
-    nt= finish - start
+    csv_reader = finish - start
 
     start   = time.time()   
     with open(r'C:\Users\BrarVe\Documents\Content Owners\Internet-Content-Owners.csv') as file:
@@ -46,26 +38,18 @@ for i in range(100):
         
         owners={}
         for row in read:
-            page = Page(row)
-            if page.contentOwner in owners:
-                owners[page.contentOwner].append(page)
-            else:
-                owners[page.contentOwner]=[page]
+            print row  
     finish = time.time()
-    obj = finish - start
-    print "dict", obj
-    print   
-    print obj-nt
-    print 
-    if nt > obj:
-        countobj+=1
-    elif nt <obj:
-        countnt+=1
+    dict_reader = finish - start
+   
+    if csv_reader > dict_reader:
+        count_reader += 1
+    elif csv_reader < dict_reader:
+        count_dict+=1
     else:
         tie+=1
 
-
-print 'final'   
+print 'final: '   
 print countnt
 print countobj
 print tie
@@ -75,4 +59,4 @@ My final results were that csv.reader was faster 995 times, while DictReader was
 
 In terms of speed, csv.reader is a clear winner. Though to be fair, for my file, both csv.reader and csv.DictReader ran in under a second, with csv.reader tending to finish around a thousandth of a second faster.
 
-If you were running this on 
+If you were running this on
