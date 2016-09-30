@@ -2,45 +2,30 @@
 layout: default
 title: Veerpal Brar
 published: true
+description: Veerpal Brar is a programmer who lets her curiosity drive her creations. 
 ---
-<div class="posts">
-  <h2> Personal Projects</h2>
-        <h3> SafetyTab </h3>
-    <p> SafetyTab is a Google Chrome extension that allows users to quickly access a new tab loaded with a website from a predetermined list. This is perfect for when you need to pretend to do homework as you parents look over your shoulder!</p>
-    <p> Languages: Javascipt, HTML, CSS  + Chrome's Javascript API's </p>
-      <h3><a href="/CodeNotes">CodeNotes</a></h3>
-    <p>CodeNotes is a dual purpose editor for computer science students. It allows for rich text editing 		as well as text-editing for code.</p>
-    <p> Languages: JavaScript, CSS, HTML </p>
-    <h2> School Projects </h2>
-    <h3> Puzzle Solver </h3>
-    <p> This a program that is able to solve Peg Solitaire Puzzles, MN Puzzles, Word Ladder Puzzles and Sudoku puzzles using either Breadth-first search or Depth-first search.</p>
-    <p> Written in python it uses classes, objects, recursion, and queues. </p>
-    <p> Final Grade: 92 % </p>
-    <p><em> Code available upon request.</em></p>
-
-    <h3>Text Adventure Game</h3>
-    <p> This is a small text adventure game where the user walks around the University of Toronto mississauga campus, trying to collect items before the big exam! </p>
-    <p> Final Grade: 90% </p>
-    <p><em> Code available upon request.</em></p>
-    <h2> Open Source Contributions </h2>
-    <h3> Learn X in Y Minutes </h3>
-    <p> Learn X in Y Minutes is a quick way to get caught up in the syntax of any programming language. I updated the Python 3 page to include information on the high common range function. </p>
-    <p> This project was my first time really using git, and learning about forks, branches, commits, and pull requests. </p>
-    <p> Language: Markdown </p>
-    <h3> Duck Duck Go Instant Answers </h3>
-    <p> Create a geometry formulea cheat cheet that appears as an instant answer on the Duck Duck Go search answer when one searches 'geometry formula cheat sheet'.
-    <p> Language: The cheat sheet appears as a .json file. <p>  
-  <h2>Recent Blog Posts</h2>
-  {% for post in site.posts limit:3%}
-    <article class="post">
-
-      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <h1>About Me</h1>
+    <div class="entry">
+        <h2 id="the-boring-version">The Boring Version:</h2>
+        <p>I’m a computer science specialist and a mathematics minor at the
+        University of Toronto. I’m familiar with Python, Java, JavaScript,
+        HTML, and CSS.</p>
+        <h2 id="the-interesting-version">The Interesting Version:</h2>
+        <p>Hello World! I am a self proclaimed Ravenclaw who started
+        programming on a whim and never stopped. I love the logic and
+        creativity behind programming and spend my time scanning the internet
+        for random tibits of information about cryptography, machine learning,
+        web development and more! I let my curiosity drive my learning, and
+        then I take what I learn and use it to build awesome things with
+        code.</p>
+        <p>Currently, I’m learning about markov chains so I can get computers
+        to write poetry for me.</p>
+        <p>You’ll find me reading science fictiion, watching too much
+        television, or writing poetry when I’m not busy coding.</p>
+        <h3 id="contact-me">Contact me:</h3>
+        <p>Email Me: <a href="v.brar@mail.utoronto.ca">veerpal.brar {at}
+        mail.utoronto {dot} ca</a></p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/veerpal-brar-678052127">LinkedIn</a></p>
+        <p>View my <a href="https://github.com/VeerpalBrar">Github</a></p>
+        
+    </div>
