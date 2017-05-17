@@ -1,5 +1,7 @@
 ---
 published: false
+layout: post
+date: 17 May 2017
 ---
 ## Markov Chain Generator: An Overview
 
@@ -35,9 +37,12 @@ In response to the purpose, I found that this method was not the best way to gen
 
 Consider this example output based on 'Alice in Wonderland':
 
+>Get up! 'said Alice; but I'm here!' the March Hare. 'I don't believe it -- once more the pig-baby was
+>sneezing and howling alternately without a cat without a cat! It means much the same as the question, it
+>wouldn't squeeze so.' 'They were obliged to say 'creatures,' said the March Hare. Alice felt dreadfully
+>puzzled by the little glass table as before, but the three gardeners, or at any rate he might answer
+>questions. 
 
->> Get up! 'said Alice; but I'm here!' the March Hare. 'I don't believe it -- once more the pig-baby was sneezing and howling alternately without a cat without a cat! It means much the same as the question, it wouldn't squeeze so.' 'They were obliged to say 'creatures,' said the March Hare. Alice felt dreadfully puzzled by the little glass table as before, but the three gardeners, or at any rate he might answer questions. 
->
 
 This output does not match the source text by more than about four words at a time, leading to unique outputs (that are interesting if not entirely comprehensible). 
 
@@ -45,11 +50,11 @@ On the other hand, poetry contains many unique descriptions without repetition. 
 
 Below, is a sample output based on Emily Dickenson Poetry (line formatting added for clarity).  
 > can see But Microscopes are prudent
-In an Emergency.
-Faith is the Pierless Bridge Supporting what We see Unto the East,  Yet they are won, 
-And not enough of me. 
-Houses so the Wise Men tell me, Oh Last Communion in the midst  so fair a Forehead Garland be indeed Fitter Feet-of Her before us 
-Than whatever Brow Art of Boards Sufficiently developed
+>In an Emergency.
+>Faith is the Pierless Bridge Supporting what We see Unto the East,  Yet they are won, 
+>And not enough of me. 
+>Houses so the Wise Men tell me, Oh Last Communion in the midst  so fair a Forehead Garland be indeed >Fitter Feet-of Her before us 
+>Than whatever Brow Art of Boards Sufficiently developed
 
 Note that the first three lines are taken directly from the source text before it changes on line 4.
 
