@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: 17 May 2017
 ---
@@ -49,11 +49,18 @@ This output does not match the source text by more than about four words at a ti
 On the other hand, poetry contains many unique descriptions without repetition. This leads to fewer possible words that can follow a particular n-gram. This caused the program to generate text that matched the source by 8 or more words (ie the generator will copy a line of a poem, word for word). 
 
 Below, is a sample output based on Emily Dickenson Poetry (line formatting added for clarity).  
-> can see But Microscopes are prudent
+>can see But Microscopes are prudent
+
 >In an Emergency.
+
 >Faith is the Pierless Bridge Supporting what We see Unto the East,  Yet they are won, 
+
 >And not enough of me. 
->Houses so the Wise Men tell me, Oh Last Communion in the midst  so fair a Forehead Garland be indeed >Fitter Feet-of Her before us 
+
+>Houses so the Wise Men tell me, Oh Last Communion in the midst  so fair a Forehead Garland be indeed 
+
+>Fitter Feet-of Her before us 
+
 >Than whatever Brow Art of Boards Sufficiently developed
 
 Note that the first three lines are taken directly from the source text before it changes on line 4.
