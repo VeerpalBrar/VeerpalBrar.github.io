@@ -1,0 +1,67 @@
+---
+layout: default
+---
+      {% if site.experience %}
+      <div class="container-fluid card card-1  margin-bottom" id="work">
+        <h2 class="text-grey padding-16"><i class="fa fa-suitcase fa-fw margin-right xxlarge text-teal"></i>Work Experience</h2>
+        {% for job in site.data.experience %}
+        <div class="container-fluid">
+          <h5 ><b>{{ job.position }} | {{ job.company }} </b></h5>
+          <h6 class="text-teal"><i class="fa fa-calendar fa-fw margin-right"></i> {{ job.date }} </h6>
+          <p>{{ job.tasks }}</p>
+          <p>Languages: {{  job.languages }}</p>
+          <hr>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      
+      {% if site.projects %}
+      <div class="container-fluid card card-1  margin-bottom" id="personal">
+        <h2 class="text-grey padding-16"><i class="fa fa-cog fa-fw margin-right xxlarge text-teal"></i>Personal Projects</h2>
+        {% for project in site.data.projects %}
+        <div class="container-fluid">
+          <h5 ><b>{{ project.name }} </b></h5>
+          <h6 class="text-teal"><i class="fa fa-calendar fa-fw margin-right"></i> {{ project.date }} </h6>
+          <p>{{ project.description }}</p>
+          <p>Languages: {{  project.languages }}</p>
+          <hr>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      
+      
+      {% if site.opensource %}
+      <div class="container-fluid card card-1  margin-bottom" id="opensource">
+        <h2 class="text-grey padding-16"><i class="fa fa-code fa-fw margin-right xxlarge text-teal"></i>Opensource Projects</h2>
+        {% for project in site.data.opensource %}
+        <div class="container-fluid">
+          <h5 ><b>{{ project.name }} </b></h5>
+          <h6 class="text-teal"><i class="fa fa-calendar fa-fw margin-right"></i> {{ project.date }} </h6>
+          <p>{{ project.description }}</p>
+          <p>Languages: {{  project.languages }}</p>
+          <hr>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      
+      {% if site.school %}
+      <div class="container-fluid card card-1  margin-bottom" id="school">
+        <h2 class="text-grey padding-16"><i class="fa fa-graduation-cap fa-fw margin-right xxlarge text-teal"></i>School Projects</h2>
+        {% for project in site.data.school %}
+        <div class="container-fluid">
+          <h5 ><b>{{ project.name }} </b></h5>
+          <p>{{ project.description }}</p>
+          <p>Languages: {{  project.languages }}</p>
+          <p>Final Grade: {{  project.grade }}</p>
+          <hr>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      
+
+     
+

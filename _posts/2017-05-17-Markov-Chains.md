@@ -3,7 +3,7 @@ published: true
 layout: post
 date: 17 May 2017
 ---
-## Markov Chain Generator: An Overview
+### Overview
 
 At the end of last year, I developed a Markov chain generator, which generates new text based on a provided corpus. Here is an overview of the project. 
 

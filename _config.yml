@@ -1,3 +1,8 @@
 name: Veerpal Brar
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+experience: true
+projects: true
+opensource: true
+school: true
+blog: true

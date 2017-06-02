@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+<div class="container-fluid card card-1  margin-bottom">
+<h2 class="text-grey padding-16">{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post">
   {{ content }}
+</div>
 </div>

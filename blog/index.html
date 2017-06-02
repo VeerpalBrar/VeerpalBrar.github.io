@@ -2,10 +2,12 @@
 layout: default
 title: Veerpal's Blog
 ---
-	<h1>{{ page.title }}</h1>
+<div class="container-fluid card card-1  margin-bottom">
+<h2 class="text-grey padding-16"><i class="fa fa-th-large fa-fw margin-right xxlarge text-teal"></i>{{ page.title }}</h2>
 	<ul class="posts">
 
 	  {% for post in site.posts %}
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>
+</div>

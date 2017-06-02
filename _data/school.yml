@@ -1,0 +1,9 @@
+- name: Paint Program
+  description: Create a program mimics MS Paint by allowing users to draw shapes on screen and save their creations. I worked in a team of four, using Scrum and git to manage workflow.
+  languages: Java
+  grade: 80%
+
+- name: Puzzle Solver
+  description: Create a program that can solve Peg Solitaire Puzzles, MN Puzzles, Word Ladder Puzzles and Sudoku puzzles using either Breadth-first search or Depth-first search.
+  languages: Python
+  grade: 92 %

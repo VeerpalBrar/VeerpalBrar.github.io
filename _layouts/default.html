@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>{{ page.title }}</title><!-- Latest compiled and minified CSS -->
-</head>
-<body>
+    <title>{{ page.title }}</title>
+
     {% include meta.html %}
-    <link href=
-    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    rel="stylesheet"><!-- jQuery library -->
-    <script src=
-    "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
-    </script><!-- Latest compiled JavaScript -->
-     <script src="/scripts/script.js"></script>
-    <script src=
-    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
-    </script><!-- link to Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <link href="/css/main.css" rel="stylesheet" type="text/css">
-    <!-- link to main stylesheet -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel=
-    'stylesheet' type='text/css'>
-    
-    <nav style="background:aliceblue; text-align:center; border-radius:10px;">
-        <ul>
-            <li class="active">
-                <a href="/">About</a>
-            </li>
-            <li>
-                <a href="/projects">Projects</a>
-            </li>
-            <li>
-                <a href="/blog">Blog</a>
-            </li>
-        </ul>
-    </nav>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-fluid margin-bottom">
+        <div style="width:10%;float:left;">
+            <img src="/images/circle.png" style="width:110px;padding-left:10px;" alt="Avatar">
+        </div>
+        <div style="width:87%;float:right;background:aliceblue;border-radius:15px;padding-left:16px;">
+            <div style="width:79%;float:left;">
+                <h5>Veerpal Brar</h5>
+                <p><i class="fa fa-graduation-cap fa-fw margin-right large text-teal"></i>Computer Science Specialist at the University of Toronto</p>
+                <p><a href="https://github.com/VeerpalBrar"><i class="fa fa-github fa-fw margin-right text-teal"></i>Github</a>&emsp;&emsp;<a href="https://www.linkedin.com/in/veerpal-brar-678052127"><i class="fa fa-linkedin fa-fw margin-right text-teal"></i>LinkedIn</a></p>
+
+            </div>
+            <div style="width:19%;float:right;">
+
+                <p class="margin-top"> <a href="/"><i class="fa fa-home fa-fw margin-right text-teal"></i>Home</a>
+                </p>
+                <p class="margin-bottom"> <a href="/blog"><i class="fa fa-rss fa-fw margin-right text-teal"></i>Blog</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid">
         {{ content }}
-    </div><!-- /.content -->
+    </div>
+    <!-- /.content -->
+
+    <footer class="container center margin-top">
+        <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Veerpal Brar</p>
+    </footer>
 </body>
+
 </html>
