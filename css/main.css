@@ -1,6 +1,6 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 75%;
     background-color:lightgrey;
     background-image:url('/images/light-wood-texture.jpg');
 }
@@ -201,6 +201,32 @@ img {
     margin-top:16px!important;
     
 }
+#pic {
+    width:110px;
+}
+
+#piccontainer{
+    width:10%;
+    float:left;
+}
+
+#header {
+    width:87%;
+    float:right;
+    background:aliceblue;
+    border-radius:15px;
+    padding-left: 16px;
+}
+
+#leftheader{
+    width:79%;
+    float:left;
+}
+
+#rightheader{
+    width:19%;
+    float:right;
+}
 
 .white-col{
     color:#000!important;background-color:#fff!important
@@ -236,7 +262,29 @@ img {
 .center{text-align:center!important}
 
 @media (max-width: 768px) {
-    body {
+body {
         width: 75%;
+    }
+}
+
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        width: 100%;
+    }
+    
+    #header{
+        width:100%;
+    }
+    
+    #pic{
+        display:none;
+    }
+    
+    #leftheader{
+        width:100%;
+    }
+
+    #rightheader{
+        width:100%;
     }
 }
