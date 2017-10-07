@@ -1,3 +1,8 @@
+- name: Machine Learning Algorithmns from Scratch
+  date: winter 2016
+  description: Implemented various Machine Learning Algorthmns from scratch to understanding how exactly they function. 
+  languages: Written in python using numpy.
+
 - name: Markov Chain
   date: winter 2016
   description: Implemented a markov chain that reads a text file and creates a transition matrix, using n-grams. It then generates text based on the transition matric

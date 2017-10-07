@@ -8,7 +8,11 @@ layout: default
         <div class="container-fluid">
           <h5 ><b>{{ job.position }} | {{ job.company }} </b></h5>
           <h6 class="text-teal"><i class="fa fa-calendar fa-fw margin-right"></i> {{ job.date }} </h6>
-          <p>{{ job.tasks }}</p>
+          {% for task in job.tasks %}
+          <ul>
+            <li>{{ task.point }}</li>
+          </ul>
+          {% endfor %}    
           <p>Languages: {{  job.languages }}</p>
           <hr>
         </div>

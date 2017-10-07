@@ -1,5 +1,26 @@
+- position: Mobile Lab Assistant
+  company: MAD Lab
+  date: May 2017 - August 2017
+  tasks: 
+    - point: Developed and ran a workshop that introduced virtual reality development for the web using the A-Frame web framework. 
+    - point: Provided code-level and troubleshooting support to student app developers by helping them debug and test Cordova based applications as well as implemented new desired features.
+  languages: JavaScript (A-Frame, JQuery)
+
+- position: Research Opprotunity Program Student
+  company: University of Toronto
+  date: May 2017 - August 2017
+  tasks: 
+    - point: Developed a Keyword Based Search Tree (k-BST) data structure for extracting coding concepts from source code in the domain of beginner level python programming.
+    - point: Implemented k-means clustering on a set of coding examples that found similar coding examples based on the concepts extracted by the k-BST.
+    - point: For our knowledge domain, the k-BST matches the accuracy of the AST data structures while improving run-time performance.
+    - point: Wrote a paper on our research with two other students and submitted it to the SIGCSE conference.
+  languages: Java
+
 - position: Web Development Assistant
   company: Ministry of Transporation
   date: May 2016 - August 2016
-  tasks: I worked on COAnalysis project which is a GUI that allows the users to parses excel files listing Ministry Content Owners to obtain relevant data. The tool was created to help in the content review process. I also created HTML versions for all Road Talk issues from 2016-2010. The aim was to replace the PDF issues with a more accessible format.
+  tasks: 
+    - point: Developed COAnalysis project which is a GUI that allows the users to parses excel files listing Ministry Content Owners to obtain relevant data. The tool was created to help in the content review process. 
+    - point: Created HTML versions for all Road Talk issues from 2016-2010. The aim was to replace the PDF issues with a more accessible format.
+    - point: Helped to create and update web pages on the Ministry of Transporation website
   languages: Python, HTML, CSS
