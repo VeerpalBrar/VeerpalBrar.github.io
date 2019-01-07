@@ -1,3 +1,12 @@
+- position: Developer
+  company: Financeit
+  date: May 2018 - August 2019
+  tasks: 
+    - point: Collaborated with team to develop various features which faciliate company growth
+    - point: Supported financing integration with multiple companies via an API.
+    - point: Enhanced and modified user flow to reduce failures related to customer online banking logins. 
+  languages: Ruby on Rails, Ember.js
+  
 - position: Mobile Lab Assistant
   company: MAD Lab
   date: May 2017 - August 2017

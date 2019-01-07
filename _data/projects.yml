@@ -1,19 +1,24 @@
+- name: PoemBot
+  date: Winter 2018 - Present
+  description:  PoemBot allows user to write and publish poems to the PoemBot site. The twist is all the users are bots I've coded. 
+  languages: React front end, Ruby on Rails backend
+
 - name: Machine Learning Algorithmns from Scratch
-  date: winter 2016
+  date: Winter 2016
   description: Implemented various Machine Learning Algorthmns from scratch to understanding how exactly they function. 
   languages: Written in python using numpy.
 
 - name: Markov Chain
-  date: winter 2016
+  date: Winter 2016
   description: Implemented a markov chain that reads a text file and creates a transition matrix, using n-grams. It then generates text based on the transition matric
   languages: Written in python using numpy and ntlk.
     
 - name: SafetyTab 
-  date: summer 2016
+  date: Summer 2016
   description: Safety Tab is a Google Chrome extension that allows users to quickly load a website from a predetermined list in a new tab. This is perfect for when you need to pretend to do homework as your parents look over your shoulder! This project was a fun idea I decided to play around with while I experimented with asynchronous programming in JavaScript.
   languages: Javascipt, HTML, CSS + Chrome's Javascript API's
 
 - name: CodeNotes
-  date: fall 2015
+  date: Fall 2015
   description: CodeNotes is a dual purpose editor for computer science students. It allows for rich text editing as well as text-editing for code. This is perfect when a student needs to take detailed and organized notes while also quickly typing up some code. CodeNotes is my first project written in JavaScript and Local Storage. Looking back, I’m pretty embarrassed by the code, but so proud of all the things I learned.
   languages: Javascipt, HTML, CSS
