@@ -23,13 +23,16 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 h1 {
     font-size: 3em;
     font-family:'Open Sans','Helvetica', 'Arial', 'Sans-Serif';
@@ -107,8 +110,8 @@ div.tab button:hover {
 }
 
 /* Create an active/current tablink class */
-div.tab button.active {
-    background-color: #ccc;
+.active {
+    background-color: #ddd;
 }
 
 /* Style the tab content */
@@ -138,14 +141,6 @@ h1,h2,h3,h4,h5,h6{
 html,body {font-family: "Roboto", sans-serif;
     font-size:15px;
     line-height:1.5
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-a:hover {
-    text-decoration: underline;
 }
 
 img {
