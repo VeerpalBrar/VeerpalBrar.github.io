@@ -1,10 +1,11 @@
 - position: Developer
   company: Financeit
   date: May 2018 - August 2019
-  tasks: 
-    - point: Collaborated with team to develop various features which faciliate company growth
-    - point: Supported financing integration with multiple companies via an API.
-    - point: Enhanced and modified user flow to reduce failures related to customer online banking logins. 
+  tasks:
+    - point: Enhanced API to allow for loan applications via single access links. This enabled Financeit to integrate financing options into multiple lead management platforms 
+    - point: Implemented new fraud rules based on credit scores which reduced manual loan reviews by 30%
+    - point: Refactored and enhanced identity verification user flow to decrease application time and allow more users to qualify for identity verification via online banking
+    - point: Also wrote automated tests using RSpec and Cucumber 
   languages: Ruby on Rails, Ember.js
   
 - position: Mobile Lab Assistant
@@ -12,10 +13,10 @@
   date: May 2017 - August 2017
   tasks: 
     - point: Developed and ran a workshop that introduced virtual reality development for the web using the A-Frame web framework. 
-    - point: Provided code-level and troubleshooting support to student app developers by helping them debug and test Cordova based applications as well as implemented new desired features.
+    - point: Provided troubleshooting support to student app developers by helping them debug and test Cordova based applications.
   languages: JavaScript (A-Frame, JQuery)
 
-- position: Research Opprotunity Program Student
+- position: Research Opportunity Program Student
   company: University of Toronto
   date: May 2017 - August 2017
   tasks: 
@@ -29,7 +30,7 @@
   company: Ministry of Transporation
   date: May 2016 - August 2016
   tasks: 
-    - point: Developed COAnalysis project which is a GUI that allows the users to parses excel files listing Ministry Content Owners to obtain relevant data. The tool was created to help in the content review process. 
+    - point: Developed COAnalysis project which is a GUI that allows the users to parse excel files listing Ministry Content Owners to obtain relevant data. The tool was created to help in the content review process. 
     - point: Created HTML versions for all Road Talk issues from 2016-2010. The aim was to replace the PDF issues with a more accessible format.
     - point: Helped to create and update web pages on the Ministry of Transporation website
   languages: Python, HTML, CSS

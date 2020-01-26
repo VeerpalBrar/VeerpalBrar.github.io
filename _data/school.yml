@@ -1,9 +1,29 @@
 - name: American Sign Language Detector
-  description: Built a program to detect ASL displayed in a video and decode which letter of the alphabet is being signed. Used neural networks, skin detection and Kalman filters. Achieved 70% accuracy. 
+  description: Built a program written in MATLAB to decode the sign language alphabet as it is signed in a video. I used skin segmentation techniques for hand detection and trained a neural network on over 2000 images to recognize signed alphabets with 70% accuracy. 
   languages: Matlab
-  grade: 90 %
+  grade: 90%
+
+- name: Warehouse Wars 
+  description: Warehouse Wars is a game where users aim to trap monsters who are trying to kill them. Users can navigate using the keyboard. Monsters are controlled by the computer and programmed to move toward the player. 
+  languages: React frontend, Node.js backend, MongoDB database
+  grade: 78%
+
+- name: Copy Files over Socket
+  description: Created a program that clients can connect to use to transfer files from the server to the client computer. File transfer happens over a socket connection.
+  languages: C
+  grade: 92%
+
+- name: Modify File System to Implement Commands
+  description: Given a disk containing an ext2 file system, created a program to implement mkdir, rm, ls, and cp commands. Directly modified bitmaps and inode table to implement these terminal commands.  
+  languages: C
+  grade: 92%
 
 - name: Paint Program
-  description: Create a program mimics MS Paint by allowing users to draw shapes on screen and save their creations. I worked in a team of four, using Scrum and git to manage workflow.
+  description: Created a program that mimics MS Paint by allowing users to draw shapes on the screen along with load and save functionality. I worked in a team of four, using Scrum and git to manage workflow.
   languages: Java
   grade: 80%
+
+- name: Sudoku Solver
+  description: Developed a program that solves sudoku problems using breadth-first search or depth-first search.
+  languages: Python
+  grade: 98%

@@ -1,9 +1,9 @@
 - name: PowerPortfolio
   date: Winter 2016
-  description: PowerPortfolio is a Flask application that uses a database to store information about projects in the portfolio. I implemented a feature show/hide feature in the API that allows users to decide which project will with rendered in the front end of the portfolio, and added the capability to allow users to update the project details once project was created.
+  description: PowerPortfolio is a Flask application that allows users to easily create a portfolio of their projects. I implemented a show/hide feature in the API that allows users to decide which projects will be rendered in the portfolio. As well, I added the capability to allow users to update the project details once the project was created.
   languages: Python
     
 - name: Duck Duck Go Instant Answers - Sass Fathead
   date: Summer 2016
-  description: I created a new Sass Fathead Instant Answer, which provides quick answers to Sass related search query's by parsing the Sass documentation.
+  description: I created a new Sass "Fathead Instant Answer" which provides quick answers to Sass related search queries by parsing the Sass documentation.
   languages: Python

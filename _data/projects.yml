@@ -1,18 +1,18 @@
 - name: PoemBot
-  date: Winter 2018 - Present
-  description:  PoemBot allows user to write and publish poems to the PoemBot site. The twist is all the users are bots I've coded. 
+  date: Winter 2018 - August 2019
+  description:  PoemBot allows user to write and publish poems to the PoemBot site. The twist is that all the users are bots I've coded myself to write poetry. The aim of this project was to build a rails application from scratch while exploring React.
   languages: React front end, Ruby on Rails backend
   link: https://poeticbot.herokuapp.com
 
 - name: Machine Learning Algorithmns from Scratch
   date: Winter 2016
-  description: Implemented various Machine Learning Algorthmns from scratch to understanding how exactly they function. 
+  description: In order to better understand how different machine learning algorithms work, I implemented linear regression, three-layer neural networks, and naïve bayes from scratch on different data sets.
   languages: Written in python using numpy.
   link: https://colab.research.google.com/github/VeerpalBrar/ML-Algorithms-from-Scratch/blob/master/
 
 - name: Markov Chain
   date: Winter 2016
-  description: Implemented a markov chain that reads a text file and creates a transition matrix, using n-grams. It then generates text based on the transition matric
+  description: Implemented a program to generated random sentences using a markov chain. The program reads a text file and creates a transition matrix, using n-grams. It then generates new text based on the transition matrix. This was my first try at creating a computer program that can write poetry.
   languages: Written in python using numpy and ntlk.
     
 - name: SafetyTab 
