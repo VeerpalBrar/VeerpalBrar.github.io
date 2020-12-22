@@ -11,8 +11,10 @@ title: Career
     <ul>
       <li>{{ task.point }}</li>
     </ul>
-    {% endfor %}    
+    {% endfor %}
+    {% if job.languages %}
     <p>Languages: {{  job.languages }}</p>
+    {% endif %}      
     <hr>
   </div>
   {% endfor %}

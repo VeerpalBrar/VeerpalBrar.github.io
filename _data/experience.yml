@@ -1,4 +1,12 @@
 - position: Developer
+  company: Shopify
+  date: May 2020 - Present
+  tasks:
+    - point: Working on the Shopify Fulfillment Network product to enable merchants to scale their business and fulfill orders faster. 
+    - point: Automated workflow for inducting products to the network for faster onboarding to the network. 
+  languages: Ruby on Rails, React
+
+- position: Developer
   company: Financeit
   date: May 2018 - August 2019
   tasks:
@@ -34,3 +42,10 @@
     - point: Created HTML versions for all Road Talk issues from 2016-2010. The aim was to replace the PDF issues with a more accessible format.
     - point: Helped to create and update web pages on the Ministry of Transporation website
   languages: Python, HTML, CSS
+
+- position: Honours Bachelor of Science
+  company: University of Toronto
+  date: September 2015 - April 2020
+  tasks: 
+    - point: Recieved undergraduate degree with a specialist in computer science
+    - point: Graduated with 3.86 GPA

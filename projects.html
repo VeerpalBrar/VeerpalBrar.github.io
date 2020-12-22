@@ -6,7 +6,7 @@ title: Projects
   {% for project in site.data.projects %}
   <div class="container-fluid">
     <h3 >{{ project.name }}</h3>
-    <h5 class="post-date text-teal"> {{ project.date }} </h5>
+    <h4 class="post-date text-teal"> {{ project.date }} </h4>
     <p>{{ project.description }}</p>
     <p>Languages: {{  project.languages }}</p>
     {% if project.link %}
