@@ -1,0 +1,14 @@
+---
+layout: default
+title: Veerpal's Blog
+---
+<div class="container-fluid card margin-bottom listing">
+	{% for post in site.posts %}
+	<div class="post other link">
+		<h3><a href="{{site.url}}{{post.url}}">{{ post.title }}</a></h3>
+		<p class="post-date text-teal">{{ post.date | date: "%B %-d, %Y" }}</p>
+		{{ post.excerpt }}
+		<hr>
+	</div>
+	{% endfor %}
+</div>

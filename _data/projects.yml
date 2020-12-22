@@ -4,6 +4,20 @@
   languages: React front end, Ruby on Rails backend
   link: https://poeticbot.herokuapp.com
 
+- name: American Sign Language Detector
+  date: Winter 2018
+  description: Built a program written in MATLAB to decode the sign language alphabet as it is signed in a video. I used skin segmentation techniques for hand detection and trained a neural network on over 2000 images to recognize signed alphabets with 70% accuracy. 
+  languages: Matlab
+
+- name: Warehouse Wars 
+  date: Winter 2018
+  description: Warehouse Wars is a game where users aim to trap monsters who are trying to kill them. Users can navigate using the keyboard. Monsters are controlled by the computer and programmed to move toward the player. 
+  languages: React frontend, Node.js backend, MongoDB database
+
+- name: Copy Files over Socket
+  date: Winter 2017
+  description: Created a program that clients can connect to use to transfer files from the server to the client computer. File transfer happens over a socket connection.
+
 - name: Machine Learning Algorithmns from Scratch
   date: Winter 2016
   description: In order to better understand how different machine learning algorithms work, I implemented linear regression, three-layer neural networks, and naïve bayes from scratch on different data sets.
@@ -19,6 +33,11 @@
   date: Summer 2016
   description: Safety Tab is a Google Chrome extension that allows users to quickly load a website from a predetermined list in a new tab. This is perfect for when you need to pretend to do homework as your parents look over your shoulder! This project was a fun idea I decided to play around with while I experimented with asynchronous programming in JavaScript.
   languages: Javascipt, HTML, CSS + Chrome's Javascript API's
+
+- name: Duck Duck Go Instant Answers - Sass Fathead
+  date: Summer 2016
+  description: I created a new Sass "Fathead Instant Answer" which provides quick answers to Sass related search queries by parsing the Sass documentation.
+  languages: Python
 
 - name: CodeNotes
   date: Fall 2015
