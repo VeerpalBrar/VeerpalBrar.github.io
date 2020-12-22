@@ -1,3 +1,9 @@
+- name: Maestro
+  date: August 2020 
+  description:  Maestro is an AI-guided vocal coach, combining music theory with practical lessons for music enthusiasts. It uses magenta.js and ml5.js to detect which note the user is singing to provide instant feedback. Maestro was a winning project for the BitRate Remote Machine Learning & Music Series hackaton. 
+  languages: Javascript
+  link: https://github.com/mahikap/music-maestro
+
 - name: PoemBot
   date: Winter 2018 - August 2019
   description:  PoemBot allows user to write and publish poems to the PoemBot site. The twist is that all the users are bots I've coded myself to write poetry. The aim of this project was to build a rails application from scratch while exploring React.
