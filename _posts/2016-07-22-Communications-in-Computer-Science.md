@@ -3,6 +3,7 @@ published: true
 title: Communication in Computer Science
 layout: post
 date: 22 July 2016
+tags: []
 ---
 For the last three months I have been working for the Ministry of Transportation as a web developer. Going into this experience, I thought I would learn about the web development process. I figured I'd learn the various technologies and technicality's of running and maintaining a website. Instead I learned something more important. 
 

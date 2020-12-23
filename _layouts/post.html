@@ -3,8 +3,12 @@ layout: default
 ---
 <div class="container-fluid margin-bottom listing">
 <h2>{{ page.title }}</h2>
-<p class="post-date text-teal">{{ page.date | date: "%B %-d, %Y" }}</p>
-
+<div class="margin-bottom">
+  <span class="post-date text-teal">{{ page.date | date: "%B %-d, %Y" }}</span>
+  {% for tag in page.tags %}
+    <a class="tag" href="/tags/#{{ tag | slugify }}"> {{ tag }} </a>
+  {% endfor %} 
+</div>
 <div class="post">
   {{ content }}
 </div>

@@ -2,6 +2,7 @@
 published: true
 layout: post
 date: 27 December 2016
+tags: ["Open Source"]
 ---
 All newbie programmers hear how they should contribute to open source in order to build their portfolio and give back to the programming community. This is a hundred percent true, but it's also a daunting task.
 I'm going to share my experiences as a newbie open source contributor and share some tips that helped me in the process. 
@@ -28,4 +29,3 @@ I think that this is something many newcomers struggle with. Projects usually ha
 Currently, I work on contributing to small projects that my friends have started. These projects usually have twenty or so files and it can be overwhelming to know where to start. However, I just take my time, looking the code (sometimes more than once) and trying to figure out what it does. I google syntax I'm unfamiliar with and figure out where the changes I want to make fit in. 
 
 I hope that as my familiarity with programming increases, I will one day contribute to large open source project that reaches thousands of users.
-

@@ -2,6 +2,7 @@
 published: true
 layout: post
 date: 10 July 2020
+tags: ["Ruby on Rails", "Web Development"]
 ---
 The other day, while working on a rails application I wrote the following line of code: 
 `Poem.where(...).order("created_at DESC").limit(10)`

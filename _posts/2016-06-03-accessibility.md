@@ -3,6 +3,7 @@ layout: post
 title: Accessibility
 date: {03 June 2016}
 published: true
+tags: ["Accessibility", "Web Development"]
 ---
 
 This past month I have been working as a web development assistant with the Minisitry of Transporation. A lot of my work as been about web accessibility.

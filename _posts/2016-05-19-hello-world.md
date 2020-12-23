@@ -3,6 +3,7 @@ layout: post
 title: Hello World
 date: {19 May 2016}
 published: true
+tags: []
 ---
 For my first post, I figured I'd start with "hello world" in true coding fashion. 
 
