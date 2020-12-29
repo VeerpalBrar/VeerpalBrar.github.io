@@ -18,7 +18,7 @@ I found some [tutorials from 2015](https://codinfox.github.io/dev/2015/03/06/use
 ### Implementation
 First, we need to iterate through all the posts on the site and create a list of tags. Then we let `uniq` and `sort` do the heavy lifting for removing duplicates and sorting the list.  I store this information in a variable called `tags` for later use. 
 
-```
+```ruby
 {% for post in site.posts %}
   {% assign tags = tags | concat:post.tags %}
 {% endfor %}
@@ -27,7 +27,7 @@ First, we need to iterate through all the posts on the site and create a list of
 
 Once I had a list of `tags`, I used the following code to create a page that sorts all my posts by tag. 
 
-```
+```ruby
 <div>
   {% for tag in tags %}
 	<h3 id="{{ tag | slugify }}">{{ tag }}</h3>
@@ -49,7 +49,7 @@ I use the `slugify`  filter that comes with Jekyll to convert space-separated st
 
 Finally, to add tags to a post, I simplify specify the tags in the metadata for a post, like so:
 
-```
+```ruby
 published: true
 layout: post
 date: 10 July 2020
