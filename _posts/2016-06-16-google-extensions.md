@@ -3,7 +3,7 @@ layout: post
 title: Google Extensions - Using Variables as Object Keys
 date: 16 June 2016
 published: true
-tags: ["Javascript", "Projects"]
+tags: ["Javascript", "Dev Journal"]
 ---
 
 Recently, I just finished creating my first google chrome extension, called SafetyTab. Now, google chrome extensions are relatively simple to create, as long as you know some HTML, CSS, and JavaScript (including asynchronous JavaScript). 

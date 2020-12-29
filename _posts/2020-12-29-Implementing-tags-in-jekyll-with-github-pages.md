@@ -1,0 +1,38 @@
+---
+published: true
+layout: post
+date: 29 December 2020
+tags: ["Jekyll", "Dev Journal"]
+
+---
+Unfortunately, Jekyll hosted with Github pages does not have [built-in support](https://pages.github.com/versions/) to implement tags on your blog. Luckily, it is easy to implement the tag functionality from scratch. 
+
+### Background 
+
+I wanted to implement a tag page that lists all blog posts by tag rather than the publication date. You can do this with [jekyll collections](http://www.minddust.com/post/alternative-tags-and-categories-on-github-pages/), however, I did not want to manually keep track of tags. I wanted the page to be automatically be generated based on the tags added to posts.  
+
+I found some [tutorials from 2015](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/) that accomplished this already.  However, the existing code had a complicated method to collect a list of tags and then filtering out duplicates. By relying on the [liquid `uniq` filter](https://shopify.github.io/liquid/filters/uniq/) I was able to simplify this code.
+
+### Implementation
+First, we need to iterate through all the posts on the site and create a list of tags. Then we let `uniq` and `sort` do the heavy lifting for removing duplicates and sorting the list.  I store this information in a variable called `tags` for later use. 
+
+
+{% gist a8183878a9a6b9b3c556334475847f77 %}
+
+Once I had a list of `tags`, I used the following code to create a page that sorts all my posts by tag. 
+
+{% gist d3f6d763d55f13fb10cf10367d148baa %}
+
+I use the `slugify`  filter that comes with Jekyll to convert space-separated strings I can use as `id` attributes for each tag. This lets me link directly to a tag on the page. 
+
+Finally, to add tags to a post, I simplify specify the tags in the metadata for a post, like so:
+```yaml 
+published: true
+layout: post
+date: 10 July 2020
+tags: ["Ruby on Rails", "Web Development"]
+---
+```
+
+### Scalability 
+I don't have many posts on my blog (yet), so this is relatively fast. However, as I add more blog posts over time, it may be too slow to iterate over all the posts multiple times for each tag. I'll probably come back to this in the future to search for a more efficient implementation.
