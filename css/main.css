@@ -1,250 +1,276 @@
 body {
-    margin: 60px auto;
-    width: 65%;
-    background-image:url('/images/light-veneer.png');
-    font-family: 'Roboto', sans-serif;
+  margin: 60px auto;
+  width: 65%;
+  background-image: url("/images/light-veneer.png");
+  font-family: "Roboto", sans-serif;
 }
 nav {
-    text-align: center;
-    border-radius: 10px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
-nav ul, footer ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+nav ul,
+footer ul {
+  padding: 0px;
+  list-style: none;
+  font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+nav ul li,
+footer ul li {
+  display: inline;
+  margin-right: 20px;
 }
-a {
-    text-decoration: none;
-    color: black;
+.link {
+  text-decoration: none;
+  color: black;
 }
 a:hover {
-    text-decoration: underline;
-    color: #909090;
+  text-decoration: underline;
+  color: #909090;
 }
 h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 p {
-    line-height: 1.4em;
-    color: #333;
-    font-size: 16px;
+  line-height: 1.4em;
+  color: #333;
+  font-size: 16px;
 }
 ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
+  margin: 20px auto 40px;
+  font-size: 1.5em;
 }
 ul.posts li {
-    list-style: none;
+  list-style: none;
 }
-ol, ul {
-    margin-top: 15px;
-    margin-bottom: 10px;
+ol,
+ul {
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 .project {
-    border-radius: 10px;
-    padding: 10px 20px 10px 20px;
-    margin-top: 10px;
-    display: inline-block;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+  display: inline-block;
 }
 .top-link {
-    color: #101010;
-    margin-top: 40px;
-    font-size: 70px;
+  color: #101010;
+  margin-top: 40px;
+  font-size: 70px;
 }
 html {
-    overflow-x: hidden 
+  overflow-x: hidden;
 }
 h1 {
-    font-size: 38px 
+  font-size: 38px;
 }
 h2 {
-    font-size: 32px 
+  font-size: 32px;
 }
 h3 {
-    font-size: 26px 
+  font-size: 26px;
 }
 h4 {
-    font-size: 22px 
+  font-size: 22px;
 }
 h5 {
-    font-size: 20px 
+  font-size: 20px;
 }
 h6 {
-    font-size: 18px 
+  font-size: 18px;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
 }
-html, body {
-    font-size: 15px;
-    line-height: 1.5 
+html,
+body {
+  font-size: 15px;
+  line-height: 1.5;
 }
 img {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 .text-teal {
-    color: #006156!important 
+  color: #006156 !important;
 }
 .container {
-    padding: 0.01em 16px;
+  padding: 0.01em 16px;
 }
 .margin-right {
-    margin-right: 16px!important;
+  margin-right: 16px !important;
 }
 .margin-top {
-    margin-top: 16px!important;
+  margin-top: 16px !important;
 }
 .margin-bottom {
-    margin-bottom: 16px!important;
+  margin-bottom: 16px !important;
 }
 .card-1 {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    color: #000!important;
-    background-color: #fff!important;
-    padding: 25px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #000 !important;
+  background-color: #fff !important;
+  padding: 25px;
 }
-.row-padding:after, .w3-row-padding:before {
-    content: "";
-    display: table;
-    clear: both;
+.row-padding:after,
+.w3-row-padding:before {
+  content: "";
+  display: table;
+  clear: both;
 }
 .row-padding {
-    padding: 0 8px 
+  padding: 0 8px;
 }
 .xxlarge {
-    font-size: 36px!important 
+  font-size: 36px !important;
 }
 .text-grey {
-    color: #757575!important 
+  color: #757575 !important;
 }
 .light-grey {
-    color: #000!important;
-    background-color: #f1f1f1!important 
+  color: #000 !important;
+  background-color: #f1f1f1 !important;
 }
 .teal {
-    color: #fff!important;
-    background-color: #009688!important 
+  color: #fff !important;
+  background-color: #009688 !important;
 }
 .center {
-    text-align: center!important 
+  text-align: center !important;
 }
 @media (max-width: 768px) {
-    body {
-        width: 75%;
-   }
+  body {
+    width: 75%;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    body {
-        width: 100%;
-   }
+  body {
+    width: 100%;
+  }
 }
 /*------------------------------------------------------------------------------ Blog ------------------------------------------------------------------------------*/
 .listing .post.other {
-    color: #666;
-   /*border-left: 1px solid #ddd;
+  color: #666;
+  /*border-left: 1px solid #ddd;
    */
 }
 .listing .post.other h2 {
-    margin: -5px 0 -15px 0;
-    font-size: 21px;
-    font-weight: 300;
+  margin: -5px 0 -15px 0;
+  font-size: 21px;
+  font-weight: 300;
 }
 .listing .post.other h2 a {
-    color: #303030;
+  color: #303030;
 }
 .listing .post.other h2 a:hover {
-    color: #909090;
+  color: #909090;
 }
 .listing .post.other p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .listing .post.other .icon {
-    float: left;
-    margin-top: -3px;
-    margin-left: -35px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    color: #ddd;
+  float: left;
+  margin-top: -3px;
+  margin-left: -35px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: #ddd;
 }
 .listing .post.other .icon:hover {
-    text-decoration: none;
-    color: #bbb;
+  text-decoration: none;
+  color: #bbb;
 }
 .listing blockquote {
-    border-left-color: #ddd;
+  border-left-color: #ddd;
 }
 .post-date {
-    font-size: 14px;
+  font-size: 14px;
 }
 @media only screen and (max-width: 520px) {
-    .listing .post {
-        margin: 30px 0;
-   }
-    .listing .post h2 {
-        font-size: 24px;
-   }
-    .listing .post .post-summary {
-        font-size: 18px;
-   }
+  .listing .post {
+    margin: 30px 0;
+  }
+  .listing .post h2 {
+    font-size: 24px;
+  }
+  .listing .post .post-summary {
+    font-size: 18px;
+  }
 }
 .wave {
-    animation-name: wave-animation;
-   /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;
-   /* Change to speed up or slow down */
-    animation-iteration-count: infinite;
-   /* Never stop waving :) */
-    transform-origin: 70% 70%;
-   /* Pivot around the bottom-left palm */
-    display: inline-block;
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
 }
 @keyframes wave-animation {
-    0% {
-        transform: rotate( 0.0deg) 
-   }
-    10% {
-        transform: rotate(14.0deg) 
-   }
-   /* The following five values can be played with to make the waving more or less extreme */
-    20% {
-        transform: rotate(-8.0deg) 
-   }
-    30% {
-        transform: rotate(14.0deg) 
-   }
-    40% {
-        transform: rotate(-4.0deg) 
-   }
-    50% {
-        transform: rotate(10.0deg) 
-   }
-    60% {
-        transform: rotate( 0.0deg) 
-   }
-   /* Reset for the last half to pause */
-    100% {
-        transform: rotate( 0.0deg) 
-   }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .tag {
-    color: #555555;
-    background: #f7f7f7;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 12px;
-    border-radius: 32px;
-    height: auto;
-    vertical-align: middle;
-    font-weight: normal !important;
-    font-size: 13px;
+  color: #555555;
+  background: #f7f7f7;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+  border-radius: 32px;
+  height: auto;
+  vertical-align: middle;
+  font-weight: normal !important;
+  font-size: 13px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid black;
+}
+
+th {
+  border: 2px solid #000000;
+  padding: 5px 10px;
+}
+
+td {
+  border: 1px solid #000000;
+  padding: 5px 10px;
 }
