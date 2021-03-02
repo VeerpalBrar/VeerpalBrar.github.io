@@ -30,7 +30,7 @@ Indexes are created per column, not per table. Each node of the tree stores a va
 
 For example, an index for the first name column would have the following B-tree index.
 
-![B-Tree Index](/images/tree-index.png)
+![B-Tree Index](/images/blog/tree-index.png)
 
 When a query such as
 
