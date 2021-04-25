@@ -6,5 +6,9 @@ projects: true
 opensource: true
 school: true
 blog: true
+plugins:
+  - jekyll-paginate
+paginate: 7
+paginate_path: "/blog/page:num/"
 gist:
   noscript: false

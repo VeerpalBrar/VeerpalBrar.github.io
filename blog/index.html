@@ -1,0 +1,35 @@
+---
+layout: default
+title: Veerpal's Blog
+---
+<div class="container-fluid card margin-bottom listing">
+	{% for post in paginator.posts %}
+	<div class="post other link">
+		<h3><a class="link" href="{{site.url}}{{post.url}}">{{ post.title }}</a></h3>
+		<h4 class="post-date text-teal">{{ post.date | date: "%B %-d, %Y" }}</h4>
+		{{ post.excerpt }}
+		<hr>
+	</div>
+	{% endfor %}
+
+	<!-- Pagination links -->
+	<div class="pagination">
+		{% if paginator.previous_page %}
+			<a href="{{ paginator.previous_page_path | relative_url }}">&laquo;</a>
+		{% endif %}
+	
+		{% for page in (1..paginator.total_pages) %}
+			{% if page == paginator.page %}
+				<a class="active" href="#">{{ page }}</a>
+			{% elsif page == 1 %}
+				<a href="{{ '/blog' | relative_url }}">{{ page }}</a>
+			{% else %}
+				<a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+			{% endif %}
+		{% endfor %}
+	
+		{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path | relative_url }}">&raquo;</a>
+		{% endif %}
+	</div>
+</div>
