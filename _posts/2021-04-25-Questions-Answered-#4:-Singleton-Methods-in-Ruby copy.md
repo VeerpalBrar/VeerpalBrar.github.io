@@ -2,7 +2,7 @@
 published: true
 layout: post
 date: 25 April 2021
-tags: ["Ruby"]
+tags: ["Ruby", "Metaprogramming"]
 ---
 
 In my last blog post on [Structs and OpenStructs](/blog/2021/03/26/Questions-Answered-3-Struct-and-OpenStruct), I referenced how OpenStruct uses `define_singleton_method` to add methods to a single instance of OpenStruct during run time. In this blog post, I want to dig deeper into the mechanics of the ruby that make this possible.
