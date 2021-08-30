@@ -5,7 +5,7 @@ date: 30 August 2021
 tags: ["RSpec", "Testing"]
 ---
 
-This past month, I looked at "best practices" for writing RSpec tests. Sites like [betterspecs](https://www.betterspecs.org/)and the [RSpec style guide](https://rspec.rubystyle.guide) offer simple rules to follow. Yet, they do not elaborate on why they suggest the practices they do. Therefore, I decided to spend some time better understanding their recommendations.
+This past month, I looked at "best practices" for writing RSpec tests. Sites like [betterspecs](https://www.betterspecs.org/) and the [RSpec style guide](https://rspec.rubystyle.guide) offer simple rules to follow. Yet, they do not elaborate on why they suggest the practices they do. Therefore, I decided to spend some time better understanding their recommendations.
 
 ### DRY vs DAMP
 
