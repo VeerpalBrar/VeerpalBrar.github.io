@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-date: 25 April 2021
+date: 23 May 2021
 tags: ["Ruby", "Metaprogramming", "Dev Journal"]
 ---
 
