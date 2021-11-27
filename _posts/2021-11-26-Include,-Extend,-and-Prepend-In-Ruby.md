@@ -127,7 +127,7 @@ end
 Foo.ancestors # [Foo, A, Object, Kernel, BasicObject]
 ```
 
-Similarly, if you extend a module, you add the module to the ancestor list of the singleton class. If you're unfamiliar with singleton classes, I mention them in [[Ruby Object Blog Post]]. The main idea is that every object has a hidden singleton class which stores methods **implemented only on that object**. A class object also has a singleton class that stores methods implemented on that class ie class methods.
+Similarly, if you extend a module, you add the module to the ancestor list of the singleton class. If you're unfamiliar with singleton classes, I mention them in my post on [singleton methods in ruby](/blog/2021/04/25/Questions-Answered-4-Singleton-Methods-in-Ruby). The main idea is that every object has a hidden singleton class which stores methods **implemented only on that object**. A class object also has a singleton class that stores methods implemented on that class ie class methods.
 
 When calling a class method, ruby will look at the singleton classes ancestor chain to see where the class method is defined. Since class methods get defined on the singleton class, extending a module adds it to the **singleton class's** ancestor chain.
 
