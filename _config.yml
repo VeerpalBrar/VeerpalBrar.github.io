@@ -12,3 +12,11 @@ paginate: 7
 paginate_path: "/blog/page:num/"
 gist:
   noscript: false
+highlighter: rouge
+kramdown:
+  input: GFM
+  guess_lang: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block: 
+      line_numbers: true
