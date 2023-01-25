@@ -1,6 +1,6 @@
 - name: Maestro
   date: August 2020 
-  description:  Maestro is an AI-guided vocal coach, combining music theory with practical lessons for music enthusiasts. It uses magenta.js and ml5.js to detect which note the user is singing to provide instant feedback. Maestro was a winning project for the BitRate Remote Machine Learning & Music Series hackaton. 
+  description:  Maestro is an AI-guided vocal coach, combining music theory with practical lessons for music enthusiasts. It uses magenta.js and ml5.js to detect which note the user is singing to provide instant feedback. Maestro was a winning project for the BitRate Remote Machine Learning & Music Series hackathon. 
   languages: Javascript
   link: https://github.com/mahikap/music-maestro
 
