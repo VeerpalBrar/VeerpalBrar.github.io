@@ -20,7 +20,7 @@ function docker_push {
 Then you can run `docker_push username/repo:version` to push your docker image. 
 
 If you're bash knowledge is as rusty as mine, here is a quick breakdown of how `docker_push` works. 
-# Redirect docker build output to grep 
+## Redirect docker build output to grep 
 First off, I knew I wanted to grep the output for `docker build .` for the docker image SHA256 code. I tried to do `docker build . | grep "writing image sha256"` but that resulted in an empty file. 
 
 [Then I realized that docker build outputs to stderr, not stdout.](https://forums.docker.com/t/capture-ouput-of-docker-build-into-a-log-file/123178/2) 
@@ -34,14 +34,14 @@ This let me grep for the line with the SHA256 code. I save the output of grep in
 
 For reference, the value of `LINE` is something like `#11 writing image sha256:ee19794e19c05bfab071c3e3593379a20ae9b59cf0dd47ac0c39274e0333e6b2 done`
 
-### Extracting the SHA256 code from the grep output
+## Extracting the SHA256 code from the grep output
 Next, I used `awk` to get the substring of the `LINE` that contains the beginning of the SHA256 code. 
 
 Since I know that `LINE` always starts with `#11 writing image sha256:`, I decided to get the substring starting at character 26, and get the next 10 characters, which are the starting of the SHA256 code. I did this with `awk '{print substr($0,26,10)}'` (full credit: [stackoverflow](https://stackoverflow.com/questions/24427009/is-there-a-cleaner-way-of-getting-the-last-n-characters-of-every-line))
 
 Again, awk reads from `stdin` so I used `echo $LINE` to get the value of `LINE` and then I redirected that to stdin of `awk`. I save the result in $IMAGE_SHA. 
 
-### Getting function arguments. 
+## Getting function arguments. 
 Now that I have the image SHA256 code, I can pass that as an argument to `docker tag`. The `docker tag` command needs the SHA256 code and the repo tag. Since the repo tag value changes based on which repo you are working with, I decided to pass that in as an argument to `docker_push`. Then I can use `$1` to reference the first argument passed to my function. 
 
 So if I call `docker_push username/repo:version` then the value of `$1` is "username/repo:version". 
