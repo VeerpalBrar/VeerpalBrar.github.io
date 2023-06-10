@@ -3,7 +3,7 @@
 
 <head>
     <title>{{ page.title }}</title>
-
+    {% feed_meta %}
     {% include meta.html %}
     {% include analytics.html %}
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -27,10 +27,11 @@
                     <a class="link" href="/blog/index.html">BLOG</a>&emsp;&emsp;
                     <a class="link" href={% link projects.html %}>PROJECTS</a>&emsp;&emsp;
                     <a class="link" href={% link career.html %}>CAREER</a>&emsp;&emsp;
+                    <a class="link" style="float: right" href="/feed.xml"><i class="fa fa-rss" aria-hidden="true"></i> RSS</a>
                 </p>
                 <hr />
             </div>
-        </div>
+        </div> 
 
         <div class="container-fluid">
             {{ content }}

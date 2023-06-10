@@ -1,4 +1,7 @@
 name: Veerpal Brar
+description: "Veerpal's personal website. I write about my technical learnings."
+url: https://veerpalbrar.github.io/
+author: Veerpal Brar
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 experience: true
@@ -8,6 +11,9 @@ school: true
 blog: true
 plugins:
   - jekyll-paginate
+  - jekyll-feed
+feed:
+  posts_limit: 25
 paginate: 7
 paginate_path: "/blog/page:num/"
 gist:

@@ -269,7 +269,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-feed
   rouge
 
 BUNDLED WITH
-   2.2.2
+   2.3.19
