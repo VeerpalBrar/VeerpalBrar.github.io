@@ -12,6 +12,7 @@ blog: true
 plugins:
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-seo-tag
 feed:
   posts_limit: 25
 paginate: 7
