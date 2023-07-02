@@ -271,6 +271,7 @@ DEPENDENCIES
   github-pages
   jekyll-feed
   jekyll-seo-tag
+  jekyll-sitemap
   rouge
 
 BUNDLED WITH

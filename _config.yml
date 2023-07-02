@@ -13,9 +13,10 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 feed:
   posts_limit: 25
-paginate: 7
+paginate: 15
 paginate_path: "/blog/page:num/"
 gist:
   noscript: false
