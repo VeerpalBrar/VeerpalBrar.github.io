@@ -1,6 +1,6 @@
 name: Veerpal Brar
 description: "Veerpal's personal website. I write about my technical learnings."
-url: https://veerpalbrar.github.io/
+url: https://veerpalbrar.github.io
 author: Veerpal Brar
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
