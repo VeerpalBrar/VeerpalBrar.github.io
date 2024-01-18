@@ -1,6 +1,13 @@
 - position: Developer
+  company: Stripe
+  date: September 2023 - Present
+  tasks:
+    - point: Working on team to help manage FX risk 
+  languages: Ruby, Java
+
+- position: Developer
   company: Shopify
-  date: May 2020 - Present
+  date: May 2020 - June 2023
   tasks:
     - point: Working on the Shopify Fulfillment Network product to enable merchants to scale their business and fulfill orders faster. 
     - point: Automated workflow for inducting products to the network for faster onboarding to the network. 
