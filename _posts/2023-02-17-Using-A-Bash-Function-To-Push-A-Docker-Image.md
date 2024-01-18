@@ -2,7 +2,7 @@
 published: true
 layout: post
 date: 17 Feburary 2023
-tags: ["Bash", "Dev Journal"]
+tags: ["Bash", "Dev Journal", "Tools"]
 ---
 I've been learning a bit about docker and found myself repeating the same commands over and over again to push a docker image. I decided to see if I could create an alias for multiple commands in bash. 
 
